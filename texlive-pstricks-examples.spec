@@ -2117,6 +2117,7 @@ These are the examples from the 6th edition of the book
 %doc %{_texmfdistdir}/doc/latex/pstricks-examples/screxabook.cls
 %doc %{_texmfdistdir}/doc/latex/pstricks-examples/screxareport.cls
 %doc %{_texmfdistdir}/doc/latex/pstricks-examples/textdemo.sty
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -2127,3 +2128,5 @@ These are the examples from the 6th edition of the book
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
