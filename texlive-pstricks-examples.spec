@@ -2125,3 +2125,17 @@ These are the examples from the 6th edition of the book
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110224-2
++ Revision: 755407
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110224-1
++ Revision: 719390
+- texlive-pstricks-examples
+- texlive-pstricks-examples
+- texlive-pstricks-examples
+- texlive-pstricks-examples
+
